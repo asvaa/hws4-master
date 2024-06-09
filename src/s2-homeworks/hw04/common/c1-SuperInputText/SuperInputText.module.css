@@ -1,0 +1,53 @@
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+
+.superInput {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Стиль для инпута с ошибками */
+.errorInput {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Стиль для инпута с ошибками при фокусе */
+.errorInput:focus {
+    border-color: #b21f2d;
+    box-shadow: 0 0 5px rgba(178, 31, 45, 0.5);
+    outline: none;
+}
+
+/* Контейнер для инпута */
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+/* Стиль для отображения ошибки */
+.error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
